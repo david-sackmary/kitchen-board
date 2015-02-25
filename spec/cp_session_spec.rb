@@ -16,8 +16,8 @@ describe session = CpSession.new do
     session.post(:fim_policies, id:1)
   end
 
-  it "calls patch " do
-    session.should_receive :get
+  it "calls delete " do
+    session.should_receive :put
     session.patch(:fim_policies, id:1)
   end
 
